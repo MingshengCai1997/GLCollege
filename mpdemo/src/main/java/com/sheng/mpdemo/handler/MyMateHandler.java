@@ -18,6 +18,8 @@ public class MyMateHandler implements MetaObjectHandler {
         // 属性名称是createTime，【也就是我们要自动填充的字段属性】值是new Date(),最后一个是元数据（表示数据的数据）
         this.setFieldValByName("createTime",new Date(),metaObject);
         this.setFieldValByName("updateTime",new Date(),metaObject);
+
+        this.setFieldValByName("version",1,metaObject);
     }
 
     /**
