@@ -25,9 +25,9 @@ class MpdemoApplicationTests {
     @Test
     void addUser() {
         User user = new User();
-        user.setName("cms");
-        user.setAge(666);
-        user.setEmail("cms@qq.com");
+        user.setName("testAddDate");
+        user.setAge(777);
+        user.setEmail("cms88@qq.com");
         // 将创建好的对象插入进去
         int insert = userMapper.insert(user);
         System.out.println(insert);
